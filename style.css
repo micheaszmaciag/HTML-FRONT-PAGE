@@ -1,0 +1,20 @@
+body
+{
+    background-color: white;
+    width: 940px;
+    margin: auto;    
+    text-align: center;
+
+}
+
+#picture
+{
+    width: 75px;
+    height: 75px;
+}
+header
+{
+    font-family: monospace;
+    font-size: 35px;
+    
+}
