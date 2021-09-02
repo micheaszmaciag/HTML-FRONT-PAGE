@@ -5,95 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Algorytmy</title>
+    <title>Nowy schemat</title>
+
 </head>
 <body>
     <div id="container">    
         <header>
             <h1><img id="picture" src="star.png" alt="NO PICTURE AVAILABLE">Podstawowe 
-                algorytmy</h1>               
+                algorytmy</h1>
         </header>
-        <div>              
-            <p id="paragraf">Na stronach tych omówione są najciekawsze algorytmy analizowane 
+        <nav>
+            <p style="text-indent: 2%; id="paragraf">Na stronach tych omówione są najciekawsze algorytmy analizowane 
                 bloku <em>Podstawy algorytmiki</em> na kursie programowania 
                 języku <small>Python</small>
             </p>    
-        </div>                
-            <div id="table">
-                <table>                    
-                    <ul>
-                        <li id="algorytm">Algorytm Euklidesa</li>
-                    </ul>    
-                    <ul>
-                        <li>Rozszerzony Algorytm Euklidesa</li>
-                    </ul>
-                    <ul>
-                        <li>Test pierwszości</li>
-                    </ul>    
-                    <ul>
-                        <li>Sito Erastotenesa</li>
-                    </ul>
-                    <ul>
-                        <li>Sortowanie przez wstawianie</li>
-                    </ul>
-                    <ul>
-                        <li>Sortowanie przez scalanie</li>
-                    </ul>
-                    <ul>
-                        <li>Wyszukiwanie binarne</li>
-                    </ul>
-                    <ul>
-                        <li>Problem wież z Hanoi</li>
-                    </ul>
-                    <ul>
-                        <li>Problem Hetmanów</li>
-                    </ul>
-                    <ul>
-                        <li>Problem skoczka szachowego</li>
-                    </ul>
-                    </table>
-            </div>    
-            <div id="secondtable">
-                <h2>Największy Wspólny Dzielnik</h2>
-                <p>Największym wspólnym dzielnikiem dwóch <b>liczb naturalnych</b>
-                a, b nazywamy najwiekszą liczbę naturalną k taką, że (k|a) oraz
-                (k|b). Oznaczamy ją NWD(a,b). Oto najważniejsze własności tej funkcji:     
-                </p>
-                <table>
-                    <ol>
-                        <li>NWD(a,b) = NWD(b,a)</li>
-                        <li>Jeśli a|b to NWD(a,b) = NWD(b,r)</li>
-                        <li>Jeśli a = k b + r, to NWD(a,b) = NWD(b,r)</li>            
-                    </ol>            
-                </table>
-                <h2>Historia algorytmu Euklidesa</h2>
-                <p>Algrotym wyznacza największego wspólnego dzielnika dwóch liczn
-                naturalnych oparty na przedstawionych tutaj własnościach został opisany
-                przez Euklidesa w dziele <em>Elementy</em>, w księgach siódmej oraz
-                dziewiątej, które powstało około 300 lat p.n.e.
-                </p>
-
-                <h2>Kod funkcji NWD</h2>
-                <h3>Pseudo-kod</h3>
-                <code>
-                    <pre>
-FUNCTION NWD(a,b)
-BEGIN
-WHILE (b <> 0) DO
-    [a,b] := [b, a mod b]
-OD
-RETURN a;
-END
-
-                        </pre>            
-                </code>       
-            </div>
-            <footer id="badone">aa</footer> 
-            <footer id="rightone"><small>Copyright&copy;2021</small></footer>                        
-        </div>
-
+        </nav>    
         
-                                              
-    </div>     
+        <table>
+            <tr><td>Algorytm Euklidesa</td></tr>
+            <tr><td>Rozszerzony Algorytm Euklidesa</td></tr>
+            <tr><td>Test pierwszości</td></tr>
+            <tr><td>Sito Erastotenesa</td></tr>
+            <tr><td>Sortowanie przez wstawianie</td></tr>
+            <tr><td>Sortowanie przez scalanie</td></tr>
+            <tr><td>Wyszukiwanie binarne</td></tr>
+            <tr><td>Problem wież z Hanoi</td></tr>
+            <tr><td>Problem Hetmanów</td></tr>
+            <tr><td>Problem skoczka szachowego</td></tr>
+        </table>
+        
+        <aside>
+            <h2>Największy Wspólny Dzielnik</h2>
+            <p>Największym wspólnym dzielnikiem dwóch <b>liczb naturalnych</b>
+            a, b nazywamy najwiekszą liczbę naturalną k taką, że (k|a) oraz
+            (k|b). Oznaczamy ją NWD(a,b). Oto najważniejsze własności tej funkcji:     
+            </p>
+                <ol>
+                    <li>NWD(a,b) = NWD(b,a)</li>
+                    <li>Jeśli a|b to NWD(a,b) = NWD(b,r)</li>
+                    <li>Jeśli a = k b + r, to NWD(a,b) = NWD(b,r)</li>            
+                </ol>           
+                              
+            <h2>Historia algorytmu Euklidesa</h2>
+            <p>Algrotym wyznacza największego wspólnego dzielnika dwóch liczn
+            naturalnych oparty na przedstawionych tutaj własnościach został opisany
+            przez Euklidesa w dziele <em>Elementy</em>, w księgach siódmej oraz
+            dziewiątej, które powstało około 300 lat p.n.e.
+            </p>
+
+            <h2>Kod funkcji NWD</h2>
+            <h3>Pseudo-kod</h3>
+            <code>
+            <p id="code">
+                FUNCTION NWD(a,b) <br>
+                BEGIN <br>
+                WHILE (b <> 0) DO<br>
+                    [a,b] := [b, a mod b]<br>
+                OD<br>
+                RETURN a;<br>
+                END<br>
+            </p>            
+            </code>                    
+        </aside>                
+        <footer>
+            Copyright&copy;2021
+        </footer>
+    </div>        
+   
 </body>
 </html>

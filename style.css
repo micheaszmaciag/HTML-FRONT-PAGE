@@ -1,88 +1,73 @@
 body
 {
-    background-color: white;   
-    font-family:  cursive,Arial, Calibri;
-    height: 100%;
-  
-}
+    font-family: cursive,Arial, Calibri;  
+}   
 
 #container
 {
-    width: 940px;    
+    width: 940px;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
+
 }
-#test
-{
-    width: 940px;    
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 #picture
 {
     width: 80px;
-    height: 80px;
 }
+
 header
 {
     font-size: 30px;
 }
-h2
+table
 {
-    font-size: 25px;
-    margin-top: 0;
+    width: 340px;
+    float:left;       
 }
-
-#table
+td
 {
-    float: left;
-    width: 265px;    
-    background-color:#eee;
-    list-style-type: none;  
-}
-
-ul
-{
-    display:inline-block;
-    padding: 10px;  
-    margin: 0;
-    width: 245px;   
-    list-style-type: none;
-    border-right: 0.5px solid;
-    border-bottom: 0.5px solid;
+    padding: 10px;
+    border-bottom: 0.5px solid;   
+    font-size: 20px;    
+    background-color: #eee;
     border-color: white;
-}
-ul:hover
+    border-bottom: 0px solid;
+    
+
+}    
+td:hover
 {
     background-color: coral;
-    color: white; 
-}
-#secondtable
-{    
-    float: left;
-    width: 655px;
-    padding-left: 20px;
+        
+    
 }
 
-code
+aside
+{
+    width: 590px;
+    float: right; 
+}
+h2
+{
+    margin-top: 0;
+}
+#code
 {
     background-color: #eee;
     border: 1px solid #999;
     display: block;    
     font-size: 120%;
+    padding-left: 10px;
+    padding-top: 5px;
+   
+    
 }
-pre
+footer
 {
-    margin: 5px
-}
-#badone
-{
-    color: white;
-}
-
-#rightone
-{
+    clear:both;
     background-color: #eee;
-
 }
+
